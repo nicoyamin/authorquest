@@ -1,0 +1,86 @@
+/*Footer*/
+
+.footer{
+    background-color: $backgroundRed;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}  
+
+.footer__section{
+    flex: 1;
+    padding-top:20px;
+    padding-left: 25px;
+}
+
+.footer__copyright {
+    background: #101010;
+    color:  white;
+    height: 20px;
+    padding-top: 5px;
+    font-family: 'Oswald';
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.footer__section--logo {
+    height: 100%;
+    display: block;
+}
+
+.footer__section--info {
+    display: table;
+}
+
+
+.footer__text {
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 1.3rem;
+    display: block;
+    padding-right: 10px;
+    color: white;
+}
+
+.footer__span{
+    display: block;
+    font-size: 1.7rem;
+    font-family: 'Oswald';
+    text-align:left;
+}
+
+.footer__h3{
+    text-align: left;
+    color: white;
+    font-family: 'Oswald';
+    margin-bottom: 10px;
+}
+
+.footer__socialIcons {
+    color: white;
+    font-size: 3rem;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+.footer__socialIcons:hover {
+    color:$orange;
+
+}
+
+/*Fin footer*/
+
+

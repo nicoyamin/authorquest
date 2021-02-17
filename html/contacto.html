@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="DUDAS, PREGUNTAS, SUGERENCIAS, UNIRSE, FORMULARIO, CONTACTO, EMAIL, NOVEDADES, NOTICIAS, ENCUESTA, CALIDAD, MEJORA">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>AuthorQuest - Contanos lo que quieras</title>
+    <meta name="description" content="¿Que piensas de AuthorQuest? Contactanos para dejarnos consultas, opiniones, criticas, felicitaciones, que siempre estamos escuchando">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md header">
+        <div class="innerHeader">
+            <div class="logoContainer">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-nobg.PNG" alt="logo" /></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto menuBar">
+                    <li class="nav-item"><a href="autores.html">Autores</a></li>
+                    <li class="nav-item"><a href="descubre.html">Descubre</a></li>
+                    <li class="nav-item"><a href="obras-completas.html">Obras completas</a></li>
+                    <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+                    <li class="nav-item">                <form class="form-inline my-2 my-lg-0 searchBar">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Libros, autores, obras..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    </form></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<h1>Contacto</h1>
+	<form> <!-- Se omite por ahora los atributos de procesamiento del form hasta el curso de backend/JS del proximo trimestre  -->
+		<table>
+		<tr>
+			<td><label for="nombre_completo">Nombre completo:</label></td>
+			<td><input type="text" name="nombre_completo"/></td>
+		</tr>
+		<tr>
+			<td><label for="email">Email:</label></td>
+			<td><input type="text" name="email"/></td>
+		</tr>
+		<tr>
+			<td><label for="tipo_usuario">Tipo de usuario:</label></td>
+			<td>
+				<select name="tipo_usuario">
+					<option value="autor">Autor</option>
+					<option value="lector">Lector</option>
+					<option value="otro">No estoy registrado/a</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="completar_encuesta">Completar encuesta de calidad:</label></td>
+			<td><input type="checkbox" name="completar_encuesta" value="0" checked/></td>
+		</tr>
+		</table>
+		<textarea type="textarea" name="mensaje" placeholder="Escriba su mensaje aqui"></textarea>
+		<div>
+			<input type="submit" value="Enviar"/>
+			<input type="reset" value="Limpiar"/>
+		</div>
+	</form>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 text-center text-md-left ">
+
+                    <div class="py-0">
+                        <div class="footerSection logo">
+                            <img src="../img/logo-nobg.png" />
+                            <p class="footer-links font-weight-bold">
+                                <a class="text-white" href="autores.html">Autores</a>
+                                |
+                                <a class="text-white" href="descubre.html">Descubre</a>
+                                |
+                                <a class="text-white" href="obras-completas.html">Obras</a>
+                                |
+                                <a class="text-white" href="contacto.html">Contacto</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-white text-center text-md-left ">
+                    <div class="py-2 my-4 footerSection info">
+                        <h3>Informacion de contacto: </h3>
+                        <span><i class="fa fa-phone"></i> &nbsp; +54 9 1123452133</span>
+                        <span><i class="fa fa-telegram"></i> &nbsp; +54 9 87841544</span>
+                        <span><i class="fa fa-envelope"></i> &nbsp; info@authorquest.com</span>
+                        <span><i class="fa fa-map"></i> &nbsp; Calle falsa 123</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-white my-4 text-center text-md-left ">
+                    <div class="py-2">
+                        <div class="footerSection social">
+                            <h3>Seguinos en nuestras redes: </h3>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            &copy; authorquest.com | Proyecto CoderHouse
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

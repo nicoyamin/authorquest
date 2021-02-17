@@ -1,0 +1,41 @@
+/*Variables*/
+
+$backgroundRed:  #620000;
+$orange:  #ec702b;
+$blue: #185875;
+$yellow:#FFF842;
+$logoImg: url(../img/logo-nobg.png);
+
+/*configuracion basica*/
+@font-face {
+  font-family: 'JosefinSlab-VariableFont_wght';
+  src: url(../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+
+  background: white;
+  background-image: url('../img/cool-background.png');
+  background-position: right center;
+  min-height:100%; 
+  position:relative; 
+  padding-bottom:200px;
+}
+

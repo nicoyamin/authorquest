@@ -1,0 +1,860 @@
+/*configuracion basica*/
+@font-face {
+    font-family: 'JosefinSlab-VariableFont_wght';
+    src: url(../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+
+    background: white;
+    background-image: url('../img/cool-background.png');
+    background-position: right center;
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:200px;
+}
+
+/*Configuracion del header*/
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #620000;
+}
+
+.innerHeader{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.logoContainer{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logoContainer img{
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menuBar{
+    padding: 0;
+    float: right;
+    height: 100%;
+}
+
+.menuBar li{
+    display: table;
+    height: 100%;
+    float: left;
+}
+
+.menuBar li a{
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.searchBar {
+    display: table-cell;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.searchBar input {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Oswald';
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.searchBar button {
+    background: none;
+    border: 3px solid white;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Oswald';
+    color: white;
+    font-size: 2rem;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+/*Fin header*/
+
+/* Secciones del index*/
+
+
+.displayLibro{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.retratoLibro {
+    width: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*.retratoLibro img{
+
+    height: 150px;
+    width: 120px;
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+       -moz-box-shadow: 3px 3px 3px #777;
+            box-shadow: 3px 3px 3px #777;
+}*/
+
+.retratoLibro p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: -10px;
+    color: #101010;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.displayObra{
+    align-content: center;
+}
+
+.poema {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.displayObra h5{
+
+    text-align: center;   
+    text-decoration: underline; 
+    margin-bottom: 10px;  
+
+}
+
+.displayObra p{
+    text-align: center;  
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.seccionAutor {
+    width:100%;
+    display: flex;
+    max-height: 200px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.displayAutor{
+    display: flex;
+    flex-direction: column;
+    flex: 0 70vw;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    overflow:scroll;
+    overflow-y:hidden;
+
+}
+
+.retratoAutor {
+    margin: 15px;
+    text-align: center;
+}
+
+.retratoAutor img{
+
+    height: 150px;
+    width: 120px;
+    border-radius:17px;
+
+}
+
+.displayIngreso {
+    display: flex;
+    flex-direction: column;
+    flex: 0 30vw;
+    justify-content: space-evenly;
+}
+
+.displayIngreso input {
+    background:  #620000;
+    border: 3px solid #620000;
+    border-radius: 5px;
+    display: block;
+    font-family: 'Oswald';
+    color: white;
+    font-size: 2rem;
+    padding-right: 2px;
+    padding-left: 2px;
+	padding:6px 13px;
+    text-decoration:none;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+h1 {
+    color:black;
+    text-decoration: underline;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+h2 {
+    color:black;
+    font-family: 'JosefinSlab-VariableFont_wght';
+    font-size: 3rem;
+    margin: 25px;
+}
+
+h3, h4, h5{
+    color:black;
+    font-family: 'JosefinSlab-VariableFont_wght';
+    font-size: 3rem;
+}
+
+p{
+    color:black;
+    text-align: justify;
+    font-family: 'JosefinSlab-VariableFont_wght';
+    font-size: 2rem;
+    font-style: italic;
+}
+
+ul{
+    color:black;
+}
+
+/*Fin secciones index*/
+
+/*Footer*/
+
+.footer{
+    background-color: #620000;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}  
+
+.footerContainer {
+    height: 180px;
+    display: flex;
+}
+
+.footerSection{
+    flex: 1;
+    padding-top:20px;
+    padding-left: 25px;
+}
+
+.footerCopyright {
+    background: #101010;
+    color:  white;
+    height: 20px;
+    padding-top: 5px;
+    font-family: 'Oswald';
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.logo{
+    height: 100%;
+    display: block;
+}
+
+.logo p {
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 1.3rem;
+    display: block;
+    padding-right: 10px;
+}
+
+.logo img {
+    width: 190px;
+    margin: 0 auto;
+    height: 55%;
+    display: block;
+}
+
+.info {
+    display: table;
+}
+
+.info span{
+    display: block;
+    font-size: 1.7rem;
+    font-family: 'Oswald';
+    text-align:left;
+}
+
+.info h3, .social h3{
+    text-align: left;
+    color: white;
+    font-family: 'Oswald';
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: white;
+}
+
+.social a {
+    color: white;
+    font-size: 3rem;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+.social a:hover {
+    color: #ec702b;
+
+}
+
+/*Fin footer*/
+
+/*Inicio Pagina Descubre*/
+
+.libroContainer{
+    width: 100%;
+    max-width: 120rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+
+.libroGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 'img-1 img-2 img-5 img-3'
+                         'img-1 img-4 img-5 img-6'
+                         'img-7 img-4 img-8 img-6';
+}
+
+.libroGallery a {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.libroDetalle{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(236, 112, 43, 0.9);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0; 
+
+    transition: opacity .5s, visibility .5s;
+}
+
+.libroDetalle h3, h4, p {
+    margin: 15px;
+    text-align: left;
+}
+
+.libroGallery a:hover .libroDetalle {
+    visibility: visible;
+    opacity: 1;
+}
+
+.libroCover {
+    border: 5px solid white;
+}
+
+#cover1{
+    grid-area: img-1;
+    min-height: 51.5rem;
+    background-image: url("../img/dead-ends.jpg");
+}
+
+#cover2{
+    grid-area: img-2;
+    background-image: url("../img/cosas.jpg");
+}
+
+#cover3{
+    grid-area: img-3;
+    background-image: url("../img/honor.jfif");
+}
+
+#cover4{
+    grid-area: img-4;
+    min-height: 51.5rem;
+    background-image: url("../img/impostor.jpg");
+}
+
+#cover5{
+    grid-area: img-5;
+    min-height: 51.5rem;
+    background-image: url("../img/mosquito.jpg");
+}
+
+#cover6{
+    grid-area: img-6;
+    min-height: 51.5rem;
+    background-image: url("../img/norte.jpg");
+}
+
+#cover7{
+    grid-area: img-7;
+    background-image: url("../img/cover.jpg");
+}
+
+#cover8{
+    grid-area: img-8;
+    background-image: url("../img/tales.jpg");
+}
+
+/*Fin Pagina Descubre*/
+
+form {
+    color:white;
+    font-family: 'JosefinSlab-VariableFont_wght';
+    font-size: 2.5rem;  
+}
+
+#tablaAutores {
+    border: 3px solid white;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#tablaAutores td {
+    border: 3px solid white;
+    color:white;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'JosefinSlab-VariableFont_wght';
+    font-size: 2rem;
+}
+
+#tablaAutores th {
+    border: 3px solid white;
+    color:white;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+#tablaAutores ol {
+    list-style-type: disc;
+}
+
+#tablaAutores a {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+
+  .libroAnimation {
+    transform-style: preserve-3d;
+    height: 200px;
+    cursor: pointer;
+    backface-visibility: visible;
+
+  }
+
+  
+  .front, .back, .pag1, .pag2, .pag3, .pag4, .pag5, .pag6, .frontImg {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0; left: 0;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+  }
+  
+  .front, .back {
+    background: #ec702b;
+  }
+  
+
+  .front, .pag1, .pag3, .pag5, .imgPortada {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .back, .pag2, .pag4, .pag6 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .pag1 { 
+    background: #efefef;
+  }
+  
+  .pag2 {
+    background: #efefef;
+  }
+  
+  .page3 {
+    background: #f5f5f5;
+  }
+  
+  .pag4 {
+    background: #f5f5f5;
+  }
+  
+  .pag5 {
+    background: #fafafa;
+  }
+  
+  .pag6 {
+    background: #fdfdfd;
+  }
+
+  .libroAnimation:hover .frontImg {
+    transform: rotateY(-160deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .libroAnimation:hover .front {
+    transform: rotateY(-160deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .libroAnimation:hover .pag1 {
+    transform: rotateY(-150deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .libroAnimation:hover .pag2 {
+    transform: rotateY(-30deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .libroAnimation:hover .pag3 {
+    transform: rotateY(-140deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+
+  .libroAnimation:hover .pagText {
+    transform: rotateY(10deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  
+  .libroAnimation:hover .pag4 {
+    transform: rotateY(-40deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .libroAnimation:hover .pag5 {
+    transform: rotateY(-130deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .libroAnimation:hover .pag6 {
+    transform: rotateY(-50deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .libroAnimation:hover .back {
+    transform: rotateY(-20deg) scale(1.1);
+  }
+
+  .imgPortada{
+    height: 100%;
+    width: 100%;
+  }
+
+  .pagText {
+    background: green;
+    transform: rotateY(0deg);
+    z-index: 1;
+
+  }
+
+
+  #carouselLibro .carousel-item .mask {
+    position: absolute;
+    top: 0;
+	left:0;
+	height:100%;
+    width: 100%;
+    background-attachment:fixed;
+}
+
+.carouselPortada {
+    width: auto;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+#carouselLibro h4{
+	font-size:5em;
+	margin-bottom:15px;
+	color:#FFF;
+	line-height:100%;
+    letter-spacing:0.5px;
+    font-family: 'Oswald';
+	font-weight:600;
+}
+#carouselLibro p{
+	font-size:2em;
+    margin-bottom:15px;
+    font-family: 'Oswald';
+	color:#d5d5d5;
+}
+#carouselLibro .carousel-item a{background:#ec702b; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
+#carouselLibro .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
+
+#carouselLibro .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
+#carouselLibro .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
+#carouselLibro .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
+#carouselLibro .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
+#carouselLibro h4, #carouselLibro p, #carouselLibro a, #carouselLibro .carousel-item .mask img{-webkit-animation-duration: 1s;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#carouselLibro .container {max-width: 1430px;  }
+#carouselLibro .carousel-item{height:100%; min-height:550px; }
+#carouselLibro{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; }
+
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #f47735; }
+
+
+.carousel-item {
+    position: relative;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.carousel-fade .carousel-item {
+	opacity: 0;
+	-webkit-transition-duration: .6s;
+	transition-duration: .6s;
+	-webkit-transition-property: opacity;
+	transition-property: opacity
+}
+.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+	opacity: 1
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+	opacity: 0
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0)
+}
+@supports (transform-style:preserve-3d) {
+	.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0)
+	}
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+ 
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+
+    .carouselTexto {
+        visibility: hidden;
+    }
+  }
