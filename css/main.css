@@ -283,14 +283,15 @@ a:hover {
 
 .contact {
   font: 'Oswald';
-  font-size: 14px;
-  font-weight: bold; }
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .contact-form button {
   background: #25274d;
   color: #fff;
   font-weight: 600;
-  width: 25%;
   justify-content: center;
   align-content: center; }
 
