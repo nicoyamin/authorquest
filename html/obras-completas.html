@@ -4,110 +4,533 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="LIBRO, OBRA, AUTOR, DESCRIPCION, TRAMA, PRECIO, DESCARGAR, COMPRAR, INFORMACION, SINOPSIS, PAGINAS, GENERO, PREVIEW, LEER, LISTA">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="keywords"
+        content="LIBRO, OBRA, AUTOR, DESCRIPCION, TRAMA, PRECIO, DESCARGAR, COMPRAR, INFORMACION, SINOPSIS, PAGINAS, GENERO, PREVIEW, LEER, LISTA">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <title>AuthorQuest - Segui la obra de tus autores</title>
-    <meta name="description" content="Si quieres saber mas sobre la obra de un autor, explora sus libros en detalle, y enterate de cualquier cosa que el autor desee compartir">
+    <meta name="description"
+        content="Si quieres saber mas sobre la obra de un autor, explora sus libros en detalle, y enterate de cualquier cosa que el autor desee compartir">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md header">
-        <div class="innerHeader">
-            <div class="logoContainer">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo-nobg.PNG" alt="logo" /></a>
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a class="navbar-brand" href="../index.html"><img class="logo logo--header" alt="logo" /></a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto menuBar">
-                    <li class="nav-item"><a href="autores.html">Autores</a></li>
-                    <li class="nav-item"><a href="descubre.html">Descubre</a></li>
-                    <li class="nav-item"><a href="obras-completas.html">Obras completas</a></li>
-                    <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-                    <li class="nav-item">                <form class="form-inline my-2 my-lg-0 searchBar">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Libros, autores, obras..."
-                            aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                    </form></li>
+                <ul class="navbar-nav mr-auto header__menuBar">
+                    <li class="nav-item header__listItems"><a class="header__itemLinks" href="autores.html">Autores</a>
+                    </li>
+                    <li class="nav-item header__listItems"><a class="header__itemLinks"
+                            href="descubre.html">Descubre</a></li>
+                    <li class="nav-item header__listItems"><a class="header__itemLinks"
+                            href="obras-completas.html">Obras completas</a></li>
+                    <li class="nav-item header__listItems"><a class="header__itemLinks"
+                            href="contacto.html">Contacto</a></li>
+                    <li class="nav-item header__listItems">
+                        <form class="form-inline my-2 my-lg-0 header__searchBar">
+                            <input class="form-control mr-sm-2 header__searchInput" type="search"
+                                placeholder="Libros, autores, obras..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 header__searchButton"
+                                type="submit">Buscar</button>
+                        </form>
+                    </li>
                 </ul>
+
             </div>
         </div>
     </nav>
-s
-	<h1>Obras completas</h1>
-	<h2>Marcos Ferrari</h2>
-	<h3>El mosquito</h3>
-	<img src="../img/mosquito.jpg" alt="el mosquito" />
-	<h3>Las cosas condenadas al fracaso</h3>
-	<img src="../img/cosas.jpg" alt="cosas" />
-	<h3>El impostor</h3>
-	<img src="../img/impostor.jpg" alt="el impostor" />
-	<h3>Coleccion completa</h3>
-    <img src="../img/coleccion.jpg" alt="coleccion" />
-    
+
+    <h1>Obras completas</h1>
+    <div class="container">
+        <div class=" row justify-content-center">
+            <div class="cover">
+                <div class="book">
+                    <label for="book-1-page-1" class="book__page book__page--1">
+                        <img src="../img/impostor.jpg" alt="impostorImg">
+                    </label>
+
+                    <label for="book-1-page-2" class="book__page book__page--4">
+                        <div class="page__content">
+                            <h1 class="page__content-title">Capítulo I: Encuentros calculados</h1>
+                            <div class="page__content-blockquote">
+                                <p class="page__content-blockquote-text">Las luces del sol de marzo entraban en el salón
+                                    a través de las ventanas abiertas en las alturas.
+                                    El oído se aguzó antes que su vista; percibió primero el sonido de conversaciones
+                                    murmuradas,
+                                    del movimiento de lapiceras sobre hojas de papel, de la perorata de un docente de
+                                    turno que explicaba…</p>
+                                <p class="page__content-blockquote-text">Sus ojos se abrieron perezosos, lacrimógenos,
+                                    taciturnos.
+                                    Los haces lumínicos le produjeron una ligera –y un tanto inexplicable – sensación de
+                                    calma.
+                                    Ahora la asociación de ideas sería perpetua: siempre pensaría que el sonido de la
+                                    luz era el de un salón de clases en una cansina mañana de marzo.</p>
+                                <p class="page__content-blockquote-text">¿Era esta la eufonía en la que se expresaba el
+                                    universo?
+                                    Pero antes que eso ¿de qué demonios hablaba el profesor calvo y con lentes? ¿En qué
+                                    clase se había metido él?</p>
+                                <p class="page__content-blockquote-text">A su izquierda, asiento vacío de por medio, un
+                                    sujeto llevaba apuntes con una atención que le parecía casi ridícula,
+                                    como si en el frente del salón alguien estuviera explicando el sentido de la
+                                    existencia misma.</p>
+                            </div>
+                            <div class="page__number">3</div>
+                        </div>
+                    </label>
+
+                    <!-- Reinicia la pagina -->
+                    <input type="radio" name="page" id="book-1-page-1" />
+                    <!-- Ir a segunda pagina -->
+                    <input type="radio" name="page" id="book-1-page-2" />
+
+                    <label class="book__page book__page--2">
+                        <div class="book__page-front">
+                            <div class="page__content">
+                                <h1 class="page__content-book-title">El impostor</h1>
+                                <h2 class="page__content-author">Marcos Ferrari</h2>
+
+                                <p class="page__content-credits">
+                                    Prologo de
+                                    <span>Fernando Freire</span>
+                                </p>
+
+                                <p class="page__content-credits">
+                                    Ilustraciones de
+                                    <span>Sofia Gala</span>
+                                </p>
+
+                                <div>
+                                    <p class="page__content-copyright">Trascender NOA</p>
+                                    <p class="page__content-copyright">Tucuman - 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book__page-back">
+                            <div class="page__content">
+                                <h1 class="page__content-title">Contenido</h1>
+                                <table class="page__content-table">
+                                    <tr>
+                                        <td>Capitulo 1</td>
+                                        <td>Encutentros calculados</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 2</td>
+                                        <td>Falsos</td>
+                                        <td>43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 3</td>
+                                        <td>Cafe</td>
+                                        <td>87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 4</td>
+                                        <td>El comienzo</td>
+                                        <td>147</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 5</td>
+                                        <td>Ramillete purpura</td>
+                                        <td>173</td>
+                                    </tr>
+                                </table>
+
+                                <div class="page__number">2</div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider div-transparent div-dot"></div>
+        <div class=" row justify-content-center">
+            <div class="cover">
+                <div class="book">
+                    <label for="book-2-page-1" class="book__page book__page--1">
+                        <img src="../img/tales.jpg" alt="talesImg">
+                    </label>
+
+                    <label for="book-2-page-2" class="book__page book__page--4">
+                        <div class="page__content">
+                            <h1 class="page__content-title">Capítulo I: Encuentros calculados</h1>
+                            <div class="page__content-blockquote">
+                                <p class="page__content-blockquote-text">Las luces del sol de marzo entraban en el salón
+                                    a través de las ventanas abiertas en las alturas.
+                                    El oído se aguzó antes que su vista; percibió primero el sonido de conversaciones
+                                    murmuradas,
+                                    del movimiento de lapiceras sobre hojas de papel, de la perorata de un docente de
+                                    turno que explicaba…</p>
+                                <p class="page__content-blockquote-text">Sus ojos se abrieron perezosos, lacrimógenos,
+                                    taciturnos.
+                                    Los haces lumínicos le produjeron una ligera –y un tanto inexplicable – sensación de
+                                    calma.
+                                    Ahora la asociación de ideas sería perpetua: siempre pensaría que el sonido de la
+                                    luz era el de un salón de clases en una cansina mañana de marzo.</p>
+                                <p class="page__content-blockquote-text">¿Era esta la eufonía en la que se expresaba el
+                                    universo?
+                                    Pero antes que eso ¿de qué demonios hablaba el profesor calvo y con lentes? ¿En qué
+                                    clase se había metido él?</p>
+                                <p class="page__content-blockquote-text">A su izquierda, asiento vacío de por medio, un
+                                    sujeto llevaba apuntes con una atención que le parecía casi ridícula,
+                                    como si en el frente del salón alguien estuviera explicando el sentido de la
+                                    existencia misma.</p>
+                            </div>
+                            <div class="page__number">3</div>
+                        </div>
+                    </label>
+
+                    <!-- Reinicia la pagina -->
+                    <input type="radio" name="page" id="book-2-page-1" />
+
+                    <!-- Ir a segunda pagina -->
+                    <input type="radio" name="page" id="book-2-page-2" />
+
+                    <label class="book__page book__page--2">
+                        <div class="book__page-front">
+                            <div class="page__content">
+                                <h1 class="page__content-book-title">Vintage Tales</h1>
+                                <h2 class="page__content-author">Norman Clough</h2>
+
+                                <p class="page__content-credits">
+                                    Prologo de
+                                    <span>Fernando Freire</span>
+                                </p>
+
+                                <p class="page__content-credits">
+                                    Ilustraciones de
+                                    <span>Sofia Gala</span>
+                                </p>
+
+                                <div>
+                                    <p class="page__content-copyright">Trascender NOA</p>
+                                    <p class="page__content-copyright">Tucuman - 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book__page-back">
+                            <div class="page__content">
+                                <h1 class="page__content-title">Contenido</h1>
+                                <table class="page__content-table">
+                                    <tr>
+                                        <td>Capitulo 1</td>
+                                        <td>Encutentros calculados</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 2</td>
+                                        <td>Falsos</td>
+                                        <td>43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 3</td>
+                                        <td>Cafe</td>
+                                        <td>87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 4</td>
+                                        <td>El comienzo</td>
+                                        <td>147</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capitulo 5</td>
+                                        <td>Ramillete purpura</td>
+                                        <td>173</td>
+                                    </tr>
+                                </table>
+
+                                <div class="page__number">2</div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider div-transparent div-dot"></div>
+    <div class=" row justify-content-center">
+        <div class="cover">
+            <div class="book">
+                <label for="book-3-page-1" class="book__page book__page--1">
+                    <img src="../img/dead-ends.jpg" alt="deadEndsImg">
+                </label>
+
+                <label for="book-3-page-2" class="book__page book__page--4">
+                    <div class="page__content">
+                        <h1 class="page__content-title">Capítulo I: Encuentros calculados</h1>
+                        <div class="page__content-blockquote">
+                            <p class="page__content-blockquote-text">Las luces del sol de marzo entraban en el salón a
+                                través de las ventanas abiertas en las alturas.
+                                El oído se aguzó antes que su vista; percibió primero el sonido de conversaciones
+                                murmuradas,
+                                del movimiento de lapiceras sobre hojas de papel, de la perorata de un docente de turno
+                                que explicaba…</p>
+                            <p class="page__content-blockquote-text">Sus ojos se abrieron perezosos, lacrimógenos,
+                                taciturnos.
+                                Los haces lumínicos le produjeron una ligera –y un tanto inexplicable – sensación de
+                                calma.
+                                Ahora la asociación de ideas sería perpetua: siempre pensaría que el sonido de la luz
+                                era el de un salón de clases en una cansina mañana de marzo.</p>
+                            <p class="page__content-blockquote-text">¿Era esta la eufonía en la que se expresaba el
+                                universo?
+                                Pero antes que eso ¿de qué demonios hablaba el profesor calvo y con lentes? ¿En qué
+                                clase se había metido él?</p>
+                            <p class="page__content-blockquote-text">A su izquierda, asiento vacío de por medio, un
+                                sujeto llevaba apuntes con una atención que le parecía casi ridícula,
+                                como si en el frente del salón alguien estuviera explicando el sentido de la existencia
+                                misma.</p>
+                        </div>
+                        <div class="page__number">3</div>
+                    </div>
+                </label>
+
+                <!-- Reinicia la pagina -->
+                <input type="radio" name="page" id="book-3-page-1" />
+
+                <!-- Ir a segunda pagina -->
+                <input type="radio" name="page" id="book-3-page-2" />
+
+                <label class="book__page book__page--2">
+                    <div class="book__page-front">
+                        <div class="page__content">
+                            <h1 class="page__content-book-title">dead ends</h1>
+                            <h2 class="page__content-author">Luke Grim</h2>
+
+                            <p class="page__content-credits">
+                                Prologo de
+                                <span>Fernando Freire</span>
+                            </p>
+
+                            <p class="page__content-credits">
+                                Ilustraciones de
+                                <span>Sofia Gala</span>
+                            </p>
+
+                            <div>
+                                <p class="page__content-copyright">Trascender NOA</p>
+                                <p class="page__content-copyright">Tucuman - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book__page-back">
+                        <div class="page__content">
+                            <h1 class="page__content-title">Contenido</h1>
+                            <table class="page__content-table">
+                                <tr>
+                                    <td>Capitulo 1</td>
+                                    <td>Encutentros calculados</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 2</td>
+                                    <td>Falsos</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 3</td>
+                                    <td>Cafe</td>
+                                    <td>87</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 4</td>
+                                    <td>El comienzo</td>
+                                    <td>147</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 5</td>
+                                    <td>Ramillete purpura</td>
+                                    <td>173</td>
+                                </tr>
+                            </table>
+
+                            <div class="page__number">2</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="divider div-transparent div-dot"></div>
+    <div class=" row justify-content-center">
+        <div class="cover">
+            <div class="book">
+                <label for="book-4-page-1" class="book__page book__page--1">
+                    <img src="../img/honor.jfif" alt="honorImg">
+                </label>
+
+                <label for="book-4-page-2" class="book__page book__page--4">
+                    <div class="page__content">
+                        <h1 class="page__content-title">Capítulo I: Encuentros calculados</h1>
+                        <div class="page__content-blockquote">
+                            <p class="page__content-blockquote-text">Las luces del sol de marzo entraban en el salón a
+                                través de las ventanas abiertas en las alturas.
+                                El oído se aguzó antes que su vista; percibió primero el sonido de conversaciones
+                                murmuradas,
+                                del movimiento de lapiceras sobre hojas de papel, de la perorata de un docente de turno
+                                que explicaba…</p>
+                            <p class="page__content-blockquote-text">Sus ojos se abrieron perezosos, lacrimógenos,
+                                taciturnos.
+                                Los haces lumínicos le produjeron una ligera –y un tanto inexplicable – sensación de
+                                calma.
+                                Ahora la asociación de ideas sería perpetua: siempre pensaría que el sonido de la luz
+                                era el de un salón de clases en una cansina mañana de marzo.</p>
+                            <p class="page__content-blockquote-text">¿Era esta la eufonía en la que se expresaba el
+                                universo?
+                                Pero antes que eso ¿de qué demonios hablaba el profesor calvo y con lentes? ¿En qué
+                                clase se había metido él?</p>
+                            <p class="page__content-blockquote-text">A su izquierda, asiento vacío de por medio, un
+                                sujeto llevaba apuntes con una atención que le parecía casi ridícula,
+                                como si en el frente del salón alguien estuviera explicando el sentido de la existencia
+                                misma.</p>
+                        </div>
+                        <div class="page__number">3</div>
+                    </div>
+                </label>
+
+                <!-- Reinicia la pagina -->
+                <input type="radio" name="page" id="book-4-page-1" />
+
+                <!-- Ir a segunda pagina -->
+                <input type="radio" name="page" id="book-4-page-2" />
+                <label class="book__page book__page--2">
+                    <div class="book__page-front">
+                        <div class="page__content">
+                            <h1 class="page__content-book-title">Asuntos de honor</h1>
+                            <h2 class="page__content-author">Alba Palacio</h2>
+
+                            <p class="page__content-credits">
+                                Prologo de
+                                <span>Fernando Freire</span>
+                            </p>
+
+                            <p class="page__content-credits">
+                                Ilustraciones de
+                                <span>Sofia Gala</span>
+                            </p>
+
+                            <div>
+                                <p class="page__content-copyright">Trascender NOA</p>
+                                <p class="page__content-copyright">Tucuman - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book__page-back">
+                        <div class="page__content">
+                            <h1 class="page__content-title">Contenido</h1>
+                            <table class="page__content-table">
+                                <tr>
+                                    <td>Capitulo 1</td>
+                                    <td>Encutentros calculados</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 2</td>
+                                    <td>Falsos</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 3</td>
+                                    <td>Cafe</td>
+                                    <td>87</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 4</td>
+                                    <td>El comienzo</td>
+                                    <td>147</td>
+                                </tr>
+                                <tr>
+                                    <td>Capitulo 5</td>
+                                    <td>Ramillete purpura</td>
+                                    <td>173</td>
+                                </tr>
+                            </table>
+
+                            <div class="page__number">2</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="row ">
-                <div class="col-md-4 text-center text-md-left ">
+                <div class="col-md-4 text-center text-md-left">
 
                     <div class="py-0">
-                        <div class="footerSection logo">
-                            <img src="../img/logo-nobg.png" />
-                            <p class="footer-links font-weight-bold">
-                                <a class="text-white" href="autores.html">Autores</a>
+                        <div class="footer__section footer__section--logo">
+                            <img class="logo logo--footer" />
+                            <p class="footer-links font-weight-bold footer__text">
+                                <a class="text-white" href="html/autores.html">Autores</a>
                                 |
-                                <a class="text-white" href="descubre.html">Descubre</a>
+                                <a class="text-white" href="html/descubre.html">Descubre</a>
                                 |
-                                <a class="text-white" href="obras-completas.html">Obras</a>
+                                <a class="text-white" href="html/obras-completas.html">Obras</a>
                                 |
-                                <a class="text-white" href="contacto.html">Contacto</a>
+                                <a class="text-white" href="html/contacto.html">Contacto</a>
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 text-white text-center text-md-left ">
-                    <div class="py-2 my-4 footerSection info">
-                        <h3>Informacion de contacto: </h3>
-                        <span><i class="fa fa-phone"></i> &nbsp; +54 9 1123452133</span>
-                        <span><i class="fa fa-telegram"></i> &nbsp; +54 9 87841544</span>
-                        <span><i class="fa fa-envelope"></i> &nbsp; info@authorquest.com</span>
-                        <span><i class="fa fa-map"></i> &nbsp; Calle falsa 123</span>
+                <div class="col-md-4 text-white text-center text-md-left">
+                    <div class="py-2 my-4 footer__section footer__section--info">
+                        <h3 class="footer__h3">Informacion de contacto: </h3>
+                        <span class="footer__span"><i class="fa fa-phone"></i> &nbsp; +54 9 1123452133</span>
+                        <span class="footer__span"><i class="fa fa-telegram"></i> &nbsp; +54 9 87841544</span>
+                        <span class="footer__span"><i class="fa fa-envelope"></i> &nbsp; info@authorquest.com</span>
+                        <span class="footer__span"><i class="fa fa-map"></i> &nbsp; Calle falsa 123</span>
                     </div>
                 </div>
 
                 <div class="col-md-4 text-white my-4 text-center text-md-left ">
                     <div class="py-2">
-                        <div class="footerSection social">
-                            <h3>Seguinos en nuestras redes: </h3>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        <div class="footer__section">
+                            <h3 class="footer__h3">Seguinos en nuestras redes: </h3>
+                            <a class="footer__socialIcons" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="footer__socialIcons" href="#"><i class="fa fa-instagram"></i></a>
+                            <a class="footer__socialIcons" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="footer__socialIcons" href="#"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footerCopyright">
+        <div class="footer__copyright">
             &copy; authorquest.com | Proyecto CoderHouse
         </div>
     </footer>
     <!-- end of footer -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
