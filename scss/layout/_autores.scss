@@ -64,19 +64,13 @@
   
   .table-container td:first-child { color: #FB667A; }
   
-  .table-container tr:hover {
-     background-color: #464A52;
-  -webkit-box-shadow: 0 6px 6px -6px #0E1119;
-         -moz-box-shadow: 0 6px 6px -6px #0E1119;
-              box-shadow: 0 6px 6px -6px #0E1119;
-  }
   
-  .table-container td:hover {
-    background-color: $yellow;
+  .table__cells--first:hover, .table__cells--second:hover {
+    background-color: $blue;
     color: #403E10;
     font-weight: bold;
     
-    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    box-shadow: #205f7c -1px 1px, #205f7c -2px 2px, #205f7c -3px 3px, #205f7c -4px 4px, #205f7c -5px 5px, #205f7c -6px 6px;
     transform: translate3d(6px, -6px, 0);
     
     transition-delay: 0s;

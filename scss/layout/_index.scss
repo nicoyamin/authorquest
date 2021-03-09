@@ -109,7 +109,6 @@
 
 h1 {
     color:black;
-    text-decoration: underline;
     text-align: center;
     letter-spacing: 3px;
     font-family: 'Oswald';
@@ -279,6 +278,11 @@ ul{
     display: flex;
     overflow: hidden;
 }
+
+.carouselTexto {
+  padding-left: 80px;
+}
+
 
 #carouselLibro h4{
 	font-size:5em;

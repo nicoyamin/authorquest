@@ -2,10 +2,9 @@
 
 .header{
     width: 100%;
-    height: 80px;
-    display: block;
     background-color:$backgroundRed; 
 }
+
 
 .header__inner{
     width: 1000px;
@@ -21,11 +20,7 @@
     float: left;
 }
 
-.header__menuBar{
-    padding: 0;
-    float: right;
-    height: 100%;
-}
+
 
 .header__listItems{
     display: table;
@@ -45,6 +40,17 @@
     font-family: 'Oswald';
     font-size: 2rem;
     font-weight: lighter;
+}
+
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 }
 
 .header__searchBar {
